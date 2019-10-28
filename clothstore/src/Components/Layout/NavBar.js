@@ -3,10 +3,13 @@ import {Link} from 'react-router-dom';
 import logo from '../../logo.svg'
 import styled from 'styled-components';
 import {ButtonContainer} from '../Button'
+import Search from '../Search/Search'
+
 
 export default class NavBar extends Component {
     render() {
         return (
+
             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                 
                 <ul className="navbar-nav align-items-center">
@@ -20,11 +23,7 @@ export default class NavBar extends Component {
                         </Link>
 
                     </li>
-                    
-                    <li className="nav-item ml-5">
-                        <input type="text" placeholder="Search" classname="input-border" size ="50"/>
-                <ButtonContainer type="submit">Submit</ButtonContainer>
-                </li>
+                    <Search/>
                 </ul>
               
                 

@@ -22,6 +22,7 @@ class ProductProvider extends Component {
     componentDidMount(){
         this.setproducts();
     }
+    
 
     setproducts=()=>{
         let temProducts =[];
